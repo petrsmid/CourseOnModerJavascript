@@ -1,4 +1,4 @@
-var factorial = function(n) {
+/*var factorial = function(n) {
     var result = 1;
     for (var i = 1; i <= n; i++) {
         result *= i;
@@ -8,7 +8,9 @@ var factorial = function(n) {
 
 console.log(factorial(5));
 
-/*
+
+
+*/
 var sumNumbersWithEach = function(arrayOfNumbers) {
     var sum = 0;
     arrayOfNumbers.forEach(function(o, idx) {
@@ -19,6 +21,10 @@ var sumNumbersWithEach = function(arrayOfNumbers) {
 
 console.log(sumNumbersWithEach([1,2,3,4,5]));
 
+
+
+
+/*
 //function is variable as well
 var myFunction = sumNumbersWithEach;
 

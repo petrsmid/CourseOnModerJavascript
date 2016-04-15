@@ -4,13 +4,13 @@
 
 function counterLoop() {
 
-    console.log('counter before declaration = ' + i);   //WOW?!
+    // console.log('counter before declaration = ' + i);   //WOW?!
 
-    for (var i = 0; i < 3 ; i++) {
+    for (let i = 0; i < 3 ; i++) {
         console.log('counter = ' + i);
     }
 
-    console.log('counter after loop = ' + i);    //WOW?!
+    //console.log('counter after loop = ' + i);    //WOW?!
 }
 
 counterLoop();
@@ -54,9 +54,10 @@ var oddNumberFinder = {
     numbers: [1, 2, 3, 4],
     oddNumbers : [],
     findOddNumbers : function() {
+        _that = this;
         this.numbers.forEach(function(number) {
             if (number % 2 === 0) {
-                this.oddNumbers.push(number);
+                _that.oddNumbers.push(number);
             }
         });
     }
@@ -73,7 +74,7 @@ console.log(oddNumberFinder.oddNumbers);
 let oddNumberFinder2 = {
     numbers: [1, 2, 3, 4],
     oddNumbers : [],
-    findOddNumbers : function() {
+    findOddNumbers : () => {
         this.numbers.forEach((number) => {
             if (number % 2 === 0) {
                 this.oddNumbers.push(number);
